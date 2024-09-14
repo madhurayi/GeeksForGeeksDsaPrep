@@ -1,5 +1,7 @@
 package Week2.Arrays;
 
+import java.util.Arrays;
+
 public class PrefixSum {
     static int[] arr={10, 20, 10, 5, 15};
      static int[] prearr=new int[arr.length];
@@ -12,6 +14,7 @@ public class PrefixSum {
         for(int i=1;i<arr.length;i++){
             prearr[i]=prearr[i-1]+arr[i];
         }
+        System.out.println(Arrays.toString(prearr));
         System.out.println(getSum(1, 3));
     }
 }
